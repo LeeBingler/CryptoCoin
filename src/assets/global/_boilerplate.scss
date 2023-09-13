@@ -1,0 +1,21 @@
+@use './colors' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: $bg-black;
+    color: $color-white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
