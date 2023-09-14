@@ -1,7 +1,6 @@
 @use '../global/' as *;
 
 nav {
-    position: fixed;
     width: 100svw;
 }
 
@@ -9,6 +8,27 @@ nav {
     width: 100%;
     max-width: 120rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    background: red;
+}
+
+.midSectionNavbar {
+    height: 100svh;
+    width: 100svw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .5s;
+    transform: translate(100%);
+}
+
+.btnMenu {
+    z-index: 10;
 }
