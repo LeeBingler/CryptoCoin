@@ -1,15 +1,24 @@
 import React from 'react';
-import { RiMenuLine } from 'react-icons/ri'
 
 interface BtnMenuProps {
-    triggerFunc: React.Dispatch<React.SetStateAction<boolean>>
+    triggerFunc: React.Dispatch<React.SetStateAction<boolean>>;
+    boolean: boolean;
 }
 
-function BtnMenu({triggerFunc}:BtnMenuProps ) {
-
+function BtnMenu({ boolean, triggerFunc }: BtnMenuProps) {
     return (
-        <div onClick={() => triggerFunc(prev => !prev)}  className='btnMenu'>
-            <RiMenuLine />
+        <div onClick={() => triggerFunc((prev) => !prev)} className='btnMenu'>
+            <div style={!boolean ? { transform: 'rotate(45deg)' } : { transform: 'rotate(0)' }} />
+            <div
+                style={
+                    !boolean
+                        ? { transform: 'translateX(20px)', opacity: '0' }
+                        : { transform: 'translateX(0)', opacity: '1' }
+                }
+            />
+            <div
+                style={!boolean ? { transform: 'rotate(-45deg)' } : { transform: 'rotate(0deg)' }}
+            />
         </div>
     );
 }

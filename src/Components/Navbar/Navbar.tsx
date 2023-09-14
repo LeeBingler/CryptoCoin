@@ -16,12 +16,17 @@ function Navbar({ children }: NavbarProps) {
             <nav>
                 <div className='navbar'>
                     <div className='logo'>
-                        <Link to={'/'}>
-                            Awesomecrypt
-                        </Link>
+                        <Link to={'/'}>Awesomecrypt</Link>
                     </div>
 
-                    <div className='midSectionNavbar' style={menuHidden ? {transform: 'translate(100%)'} : {transform: 'translate(0%)'}}>
+                    <div
+                        className='midSectionNavbar'
+                        style={
+                            menuHidden
+                                ? { transform: 'translate(100%)' }
+                                : { transform: 'translate(0%)' }
+                        }
+                    >
                         <ListLinkOnHome className='listNavbar'>
                             Home,
                             Market,
@@ -35,7 +40,7 @@ function Navbar({ children }: NavbarProps) {
                         </div>
                     </div>
 
-                    <BtnMenu triggerFunc={setMenuHidden} />
+                    <BtnMenu triggerFunc={setMenuHidden} boolean={menuHidden} />
                 </div>
             </nav>
 
