@@ -11,8 +11,9 @@ interface NavbarProps {
 
 function Navbar({ children }: NavbarProps) {
     const [showMenu, setShowMenu] = useState(false);
+    const mobileSizeMaxPx = 768;
 
-    useScreenSizeShow({ setShowMenu: setShowMenu, size: 640 });
+    useScreenSizeShow({ setShowMenu: setShowMenu, size: mobileSizeMaxPx });
 
     return (
         <>
@@ -36,20 +37,22 @@ function Navbar({ children }: NavbarProps) {
                         >
                             Home, Market, Choose Us, Join
                         </ListLinkOnHome>
+                    </div>
 
+                    <div className='bullshit'>
                         <SocialBar
                             twitterLink='https://twitter.com'
                             discordLink='https://discord.com/'
                             className='socialBarNav'
                         />
-                    </div>
 
-                    <BtnMenu
-                        triggerFunc={setShowMenu}
-                        boolean={showMenu}
-                        colors={['#f3f2f4']}
-                        sizeToDisappearPx={640}
-                    />
+                        <BtnMenu
+                            triggerFunc={setShowMenu}
+                            boolean={showMenu}
+                            colors={['#f3f2f4']}
+                            sizeToDisappearPx={mobileSizeMaxPx}
+                        />
+                    </div>
                 </div>
             </nav>
 

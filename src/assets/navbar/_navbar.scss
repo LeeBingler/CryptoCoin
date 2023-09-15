@@ -7,11 +7,11 @@
 
 .navbar {
     width: 100%;
-    max-width: 75em;
+    max-width: 60em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 5rem;
+    margin: 3rem;
     background: $bg-black;
 }
 
@@ -45,13 +45,15 @@
         gap: 2rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
+
         li,
         a {
             background-color: inherit;
             color: $color-white;
             transition: color .4s;
             font-size: 4rem;
-
+            font-weight: 600;
             &:hover {
                 color: $primary;
             }
@@ -59,16 +61,21 @@
     }
 }
 
+.bullshit {
+    display: flex;
+    gap: 1.5rem;
+}
+
 .socialBarNav {
     display: flex;
+    justify-content: center;
+    align-items: end;
     flex-direction: row;
     gap: 1rem;
-
+    transform: translateY(5px);
     a {
         color: $color-white;
-        font-family: $title-font;
-        font-size: 4rem;
-        font-weight: 700;
+        font-size: 3rem;
         transition: color .4s;
 
         &:hover {
@@ -108,26 +115,26 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: $sm) {
+@media (min-width: $md) {
     .btnMenu {
         display: none;
     }
 
     .midSectionNavbar {
         position: relative;
-        width: max-content;
         height: auto;
         background: $bg-black;
         color: $color-white;
         transition: none;
         flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
 
         .listNavbar {
             display: flex;
-            gap: 1rem;
-            color: $color-white;
+            flex-direction: row;
+            gap: 7rem;
+            a {
+                font-size: $text-normal;
+            }
         }
     }
 }

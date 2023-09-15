@@ -22,7 +22,7 @@ function useScreenSizeShow({ setShowMenu, size }:useScreenProps) {
         };
         window.addEventListener('resize', updateDimension);
 
-        if (screenSize.width > size) {
+        if (screenSize.width >= size) {
             setShowMenu(true);
         } else {
             setShowMenu(false);
