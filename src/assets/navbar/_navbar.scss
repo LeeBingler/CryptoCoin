@@ -10,7 +10,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: red;
 }
 
 .midSectionNavbar {
@@ -19,6 +18,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
+    background-color: $secondary;
 
     display: flex;
     flex-direction: column;
@@ -27,6 +27,20 @@ nav {
 
     transition: all 0.5s;
     transform: translate(100%);
+
+    .listNavbar {
+        background-color: inherit;
+        color: $bg-black;
+
+        li, a {
+            background-color: inherit;
+            color: inherit;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
 }
 
 .btnMenu {

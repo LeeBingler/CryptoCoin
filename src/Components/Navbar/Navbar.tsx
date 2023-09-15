@@ -1,4 +1,4 @@
-import { RiTwitterXFill, RiDiscordFill } from 'react-icons/ri';
+import { RiTwitterXFill, RiDiscordFill, RiYoutubeFill, RiFacebookFill } from 'react-icons/ri';
 import BtnMenu from './components/BtnMenu';
 import ListLinkOnHome from './components/ListLinkOnHome';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ function Navbar({ children }: NavbarProps) {
             <nav>
                 <div className='navbar'>
                     <div className='logo'>
-                        <Link to={'/'}>Awesomecrypt</Link>
+                        <Link to={'/'}>CryptoCoin</Link>
                     </div>
 
                     <div
@@ -27,20 +27,26 @@ function Navbar({ children }: NavbarProps) {
                                 : { transform: 'translate(0%)' }
                         }
                     >
-                        <ListLinkOnHome className='listNavbar'>
-                            Home,
-                            Market,
-                            Choose Us,
-                            Join
+                        <ListLinkOnHome
+                            className='listNavbar'
+                            onClick={() => setMenuHidden((prev) => !prev)}
+                        >
+                            Home, Market, Choose Us, Join
                         </ListLinkOnHome>
 
                         <div>
                             <RiTwitterXFill />
                             <RiDiscordFill />
+                            <RiYoutubeFill />
+                            <RiFacebookFill />
                         </div>
                     </div>
 
-                    <BtnMenu triggerFunc={setMenuHidden} boolean={menuHidden} />
+                    <BtnMenu
+                        triggerFunc={setMenuHidden}
+                        boolean={menuHidden}
+                        colors={['#0f051d', '#f3f2f4']}
+                    />
                 </div>
             </nav>
 

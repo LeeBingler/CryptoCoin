@@ -1,18 +1,20 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface ListLinkOnHomeProps {
     children: string;
     className: string;
+    onClick: React.MouseEventHandler
 }
 
-function ListLinkOnHome({ children, className = 'list' }: ListLinkOnHomeProps) {
+function ListLinkOnHome({ onClick, children, className = 'list' }: ListLinkOnHomeProps) {
     const arrayOfChild = children.split(',');
 
     return (
         <ul className={className}>
-            {arrayOfChild.map((item) => {
+            {arrayOfChild.map((item, index) => {
                 return (
-                    <li>
+                    <li onClick={onClick} key={index}>
                         <Link to={item === 'Home' ? `/` : `/#${item.replace(/\s/g, '')}`}>
                             {item}
                         </Link>
