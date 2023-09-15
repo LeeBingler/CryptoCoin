@@ -1,19 +1,19 @@
 
-# Awesome-crypt
+# CryptoCoin
 
-Awesome-crypt is an impressive crypto search website built with React.JS and Typescript. It allows users to browse through various cryptocurrency. The project's code is licensed under the MIT License, providing flexibility for usage and distribution.
+CryptoCoin is an impressive crypto search website built with React.JS and Typescript. It allows users to browse through various cryptocurrency. The project's code is licensed under the MIT License, providing flexibility for usage and distribution.
 ## Build/Run and Deployement
 
 Clone the project
 
 ```bash
-  git clone git@github.com:LeeBingler/Awesomecrypt.git
+  git clone git@github.com:LeeBingler/CryptoCoin.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Awesomecrypt
+  cd CryptoCoin
 ```
 
 Install dependencies
@@ -40,6 +40,6 @@ To run tests, run the following command
 
 ## Copyright and License
 
-The awesome-crypt project is open-source and distributed under the MIT License, granting users the freedom to use, modify, and distribute the code. For more details, refer to the License File provided in the project.
+The CryptoCoin project is open-source and distributed under the MIT License, granting users the freedom to use, modify, and distribute the code. For more details, refer to the License File provided in the project.
 
-Feel free to explore the code, contribute, or use awesome-crypt as a foundation for your crypto search website projects. Happy coding!
+Feel free to explore the code, contribute, or use CryptoCoin as a foundation for your crypto search website projects. Happy coding!

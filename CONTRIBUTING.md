@@ -28,7 +28,7 @@ To get an overview of the project, read the [README](README.md). Here are some r
 
 #### If you found a bug, and you want to fix it
 
-1. If you spot a problem with the Awesome-crypt, search if an [issue](https://github.com/LeeBingler/Awesomecrypt/issues) already exists. If a related issue doesn't exist, you can open a new issue.
+1. If you spot a problem with the CryptoCoin, search if an [issue](https://github.com/LeeBingler/CryptoCoin/issues) already exists. If a related issue doesn't exist, you can open a new issue.
 2. Then comment that you want to fix the issue.
 3. We will assign the issue to you so that no one else will work on it simultaneously. We will provide you with maximum support.
 
@@ -36,7 +36,7 @@ But of course, you can fix the issue without telling us.
 
 #### If you want to fix an existing issue
 
-1. Scan through our existing [issues](https://github.com/LeeBingler/Awesomecrypt/issues) to find one that interests you.
+1. Scan through our existing [issues](https://github.com/LeeBingler/CryptoCoin/issues) to find one that interests you.
 2. Then comment that you want to fix the issue.
 3. We will assign the issue to you so that no one else will work on it simultaneously. We will provide you with maximum support.
 
@@ -44,7 +44,7 @@ But of course, you can fix the issue without telling us.
 
 #### If you have some feature suggestions, and you want to contribute
 
-1. Create a new thread in [Discussion](https://github.com/LeeBingler/Awesomecrypt/discussions/categories/feature-suggestions) with the detail of your suggestion.
+1. Create a new thread in [Discussion](https://github.com/LeeBingler/CryptoCoin/discussions/categories/feature-suggestions) with the detail of your suggestion.
 2. We will discuss this with you and schedule the tasks for the feature suggestions. We will provide you with maximum support.
 
 But of course, you can finish your contribution and create a PR without notifying us in advance.
@@ -55,9 +55,9 @@ But of course, you can finish your contribution and create a PR without notifyin
 - **Step 2** - Clone the repository to your local machine.
 - **Step 3** - Add the changes to your repository.
 - **Step 4** - run the command `npm run lint` and `npm run test` in order to know that nothing is broken.
-- **Step 5** - Create a PULL Request from forked project to Awesome-crypt. We may ask for changes to be made before a PR can be merge.
+- **Step 5** - Create a PULL Request from forked project to CryptoCoin. We may ask for changes to be made before a PR can be merge.
 - **Step 6** - Congratulations 🎉🎉 Your PR is approved and Merged !!!
-- **Step 7** - Thank You, You becomes one of the contributor of Awesome-crypt 🎉🎉 .
+- **Step 7** - Thank You, You becomes one of the contributor of CryptoCoin 🎉🎉 .
 
 If the steps above isn't very clear, you can search ["GitHub Forks and Pull Requests" on Youtube](https://www.youtube.com/watch?v=a_FLqX3vGR4).
 
