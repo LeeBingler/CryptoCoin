@@ -39,9 +39,7 @@ function Navbar({ children }: NavbarProps) {
 
                         <SocialBar
                             twitterLink='https://twitter.com'
-                            youtubeLink='https://www.youtube.com/'
                             discordLink='https://discord.com/'
-                            facebookLink='https://www.facebook.com/'
                             className='socialBarNav'
                         />
                     </div>

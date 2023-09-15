@@ -16,9 +16,12 @@
 }
 
 .logo {
-    font-family: $title-font;
-    font-size: 3rem;
-    font-weight: 700;
+    a {
+        color: $color-white;
+        font-family: $title-font;
+        font-size: 3rem;
+        font-weight: 700;
+    }
 }
 
 .midSectionNavbar {
@@ -35,14 +38,19 @@
     align-items: center;
     gap: 7rem;
 
-    transition: all 0.4s;
+    transition: transform .4s;
 
     .listNavbar {
         background-color: inherit;
-
-        li, a {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        li,
+        a {
             background-color: inherit;
-            color: inherit;
+            color: $color-white;
+            transition: color .4s;
+            font-size: 4rem;
 
             &:hover {
                 color: $primary;
@@ -51,10 +59,28 @@
     }
 }
 
+.socialBarNav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    a {
+        color: $color-white;
+        font-family: $title-font;
+        font-size: 4rem;
+        font-weight: 700;
+        transition: color .4s;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
 .btnMenu {
     position: relative;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,7 +105,6 @@
         transform-origin: 1px;
     }
 }
-
 
 /* MEDIA QUERIES */
 
