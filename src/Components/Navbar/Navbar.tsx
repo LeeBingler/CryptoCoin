@@ -14,6 +14,7 @@ function Navbar({ children }: NavbarProps) {
     return (
         <>
             <nav>
+
                 <div className='navbar'>
                     <div className='logo'>
                         <Link to={'/'}>CryptoCoin</Link>
@@ -48,6 +49,7 @@ function Navbar({ children }: NavbarProps) {
                         colors={['#0f051d', '#f3f2f4']}
                     />
                 </div>
+            
             </nav>
 
             {children}
