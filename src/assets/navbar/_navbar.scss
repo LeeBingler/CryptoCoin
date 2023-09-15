@@ -11,12 +11,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin: 3rem 5rem;
+    background: $bg-black;
 }
 
 .logo {
+    color: $primary;
     font-family: $title-font;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .midSectionNavbar {
@@ -32,19 +35,17 @@
     justify-content: center;
     align-items: center;
 
-    transition: all 0.5s;
-    transform: translate(100%);
+    transition: all 0.4s;
 
     .listNavbar {
         background-color: inherit;
-        color: $bg-black;
 
         li, a {
             background-color: inherit;
             color: inherit;
 
             &:hover {
-                color: $color-white;
+                color: $primary;
             }
         }
     }
@@ -57,8 +58,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -70,12 +71,38 @@
     }
 
     div {
-        width: 2rem;
-        height: 0.25rem;
-        background: $color-white;
+        width: 3rem;
+        height: 0.3rem;
         border-radius: 10px;
         transition: all 0.3s linear;
         position: relative;
         transform-origin: 1px;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: $sm) {
+    .btnMenu {
+        display: none;
+    }
+
+    .midSectionNavbar {
+        position: relative;
+        width: max-content;
+        height: auto;
+        background: $bg-black;
+        color: $color-white;
+        transition: none;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        .listNavbar {
+            display: flex;
+            gap: 1rem;
+            color: $color-white;
+        }
     }
 }

@@ -3,18 +3,20 @@ import BtnMenu from './components/BtnMenu';
 import ListLinkOnHome from './components/ListLinkOnHome';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import useScreenSizeShow from '../../hook/useScreenSizeShow';
 
 interface NavbarProps {
     children: JSX.Element;
 }
 
 function Navbar({ children }: NavbarProps) {
-    const [menuHidden, setMenuHidden] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
+
+    useScreenSizeShow({ setShowMenu: setShowMenu, size: 640 });
 
     return (
         <>
             <nav className='navContainer'>
-
                 <div className='navbar'>
                     <div className='logo'>
                         <Link to={'/'}>CryptoCoin</Link>
@@ -23,14 +25,14 @@ function Navbar({ children }: NavbarProps) {
                     <div
                         className='midSectionNavbar'
                         style={
-                            menuHidden
-                                ? { transform: 'translate(100%)' }
-                                : { transform: 'translate(0%)' }
+                            showMenu
+                                ? { transform: 'translate(0%)' }
+                                : { transform: 'translate(-100%)' }
                         }
                     >
                         <ListLinkOnHome
                             className='listNavbar'
-                            onClick={() => setMenuHidden((prev) => !prev)}
+                            onClick={() => setShowMenu((prev) => !prev)}
                         >
                             Home, Market, Choose Us, Join
                         </ListLinkOnHome>
@@ -44,12 +46,12 @@ function Navbar({ children }: NavbarProps) {
                     </div>
 
                     <BtnMenu
-                        triggerFunc={setMenuHidden}
-                        boolean={menuHidden}
-                        colors={['#0f051d', '#f3f2f4']}
+                        triggerFunc={setShowMenu}
+                        boolean={showMenu}
+                        colors={['#f3f2f4']}
+                        sizeToDisappearPx={640}
                     />
                 </div>
-
             </nav>
 
             {children}

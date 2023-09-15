@@ -1,6 +1,11 @@
-import { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function useWindowSize() {
+interface useScreenProps {
+    setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
+    size: number;
+}
+
+function useScreenSizeShow({ setShowMenu, size }:useScreenProps) {
     const [screenSize, setScreenSize] = useState(getCurrentDimension());
 
     function getCurrentDimension() {
@@ -17,12 +22,16 @@ function useWindowSize() {
         };
         window.addEventListener('resize', updateDimension);
 
+        if (screenSize.width > size) {
+            setShowMenu(true);
+        } else {
+            setShowMenu(false);
+        }
+
         return () => {
             window.removeEventListener('resize', updateDimension);
         };
-    }, [screenSize]);
-
-    return screenSize;
+    }, [screenSize, setShowMenu]);
 }
 
-export default useWindowSize;
+export default useScreenSizeShow;
