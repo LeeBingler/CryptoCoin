@@ -1,17 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-interface Props {
+interface inputBtnFieldProps {
     onClick: React.MouseEventHandler;
     content: string;
 }
 
-function inputBtnField({onClick, content}:Props) {
-  return (
-    <div>
-        <input type="text" />
-        <button onClick={onClick}> {content} </button>
-    </div>
-  )
+function inputBtnField({ onClick, content }:inputBtnFieldProps) {
+    return (
+        <>
+            <input type='text' />
+            <button onClick={onClick}> {content} </button>
+        </>
+    );
 }
 
-export default inputBtnField
+export default inputBtnField;

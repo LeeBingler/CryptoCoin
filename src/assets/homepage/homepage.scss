@@ -1,0 +1,32 @@
+@use '../global' as *;
+
+.homepageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage {
+    width: 100svw;
+    max-width: 60em;
+    margin: 3rem;
+    background: $bg-black;
+}
+
+.hero {
+    h1 {
+        font-family: $title-font;
+        font-size: $h3-size;
+
+        span {
+            background: $gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    p {
+        color: $color-white;
+        font-size: $text-mini;
+    }
+}

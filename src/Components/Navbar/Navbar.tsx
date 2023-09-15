@@ -39,7 +39,7 @@ function Navbar({ children }: NavbarProps) {
                         </ListLinkOnHome>
                     </div>
 
-                    <div className='bullshit'>
+                    <div className='containerBtnNav'>
                         <SocialBar
                             twitterLink='https://twitter.com'
                             discordLink='https://discord.com/'

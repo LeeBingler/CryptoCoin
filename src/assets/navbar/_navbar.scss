@@ -61,7 +61,7 @@
     }
 }
 
-.bullshit {
+.containerBtnNav {
     display: flex;
     gap: 1.5rem;
 }
@@ -72,7 +72,6 @@
     align-items: end;
     flex-direction: row;
     gap: 1rem;
-    transform: translateY(5px);
 
     a {
         color: $color-white;
@@ -131,5 +130,9 @@
                 font-size: $text-normal;
             }
         }
+    }
+
+    .socialBarNav {
+        transform: translateY(5px);
     }
 }
