@@ -1,9 +1,9 @@
-import { RiTwitterXFill, RiDiscordFill, RiYoutubeFill, RiFacebookFill } from 'react-icons/ri';
 import BtnMenu from './components/BtnMenu';
 import ListLinkOnHome from './components/ListLinkOnHome';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import useScreenSizeShow from '../../hook/useScreenSizeShow';
+import SocialBar from '../SocialBar';
 
 interface NavbarProps {
     children: JSX.Element;
@@ -37,12 +37,13 @@ function Navbar({ children }: NavbarProps) {
                             Home, Market, Choose Us, Join
                         </ListLinkOnHome>
 
-                        <div>
-                            <RiTwitterXFill />
-                            <RiDiscordFill />
-                            <RiYoutubeFill />
-                            <RiFacebookFill />
-                        </div>
+                        <SocialBar
+                            twitterLink='https://twitter.com'
+                            youtubeLink='https://www.youtube.com/'
+                            discordLink='https://discord.com/'
+                            facebookLink='https://www.facebook.com/'
+                            className='socialBarNav'
+                        />
                     </div>
 
                     <BtnMenu

@@ -16,7 +16,6 @@
 }
 
 .logo {
-    color: $primary;
     font-family: $title-font;
     font-size: 3rem;
     font-weight: 700;
@@ -34,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 7rem;
 
     transition: all 0.4s;
 
