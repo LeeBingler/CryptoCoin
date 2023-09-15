@@ -13,7 +13,7 @@ function Navbar({ children }: NavbarProps) {
 
     return (
         <>
-            <nav>
+            <nav className='navContainer'>
 
                 <div className='navbar'>
                     <div className='logo'>
@@ -49,7 +49,7 @@ function Navbar({ children }: NavbarProps) {
                         colors={['#0f051d', '#f3f2f4']}
                     />
                 </div>
-            
+
             </nav>
 
             {children}

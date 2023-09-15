@@ -1,19 +1,18 @@
 @use '../global/' as *;
 
-nav {
-    width: 100svw;
+.navContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
     width: 100%;
     max-width: 75em;
-    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: .5rem;
     margin-right: .5rem;
-    background: red;
 }
 
 .logo {
