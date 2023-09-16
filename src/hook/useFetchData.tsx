@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function useFetchData(url:string) {
     const [data, setData] = useState({
         isLoading: true,
-        data: null,
+        data: [],
         error: null
     })
 
@@ -18,7 +18,7 @@ function useFetchData(url:string) {
                       return JSON.parse(response.request.response);
                   })
                   .then((data) => {
-                      setData(prev => ({...prev, isLoading: false, data: data}));
+                      setData({error: null, isLoading: false, data: data});
                   })
                   .catch((e) => {
                       console.error(e.status);

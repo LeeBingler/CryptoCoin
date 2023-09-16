@@ -1,7 +1,7 @@
 import BtnMenu from './components/BtnMenu';
 import ListLinkOnHome from './components/ListLinkOnHome';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import useScreenSizeShow from '../../hook/useScreenSizeShow';
 import SocialBar from '../SocialBar';
 
@@ -33,7 +33,7 @@ function Navbar({ children }: NavbarProps) {
                     >
                         <ListLinkOnHome
                             className='listNavbar'
-                            onClick={() => setShowMenu((prev) => !prev)}
+                            onClick={() => setShowMenu(false)}
                         >
                             Home, Market, Choose Us, Join
                         </ListLinkOnHome>
@@ -55,8 +55,9 @@ function Navbar({ children }: NavbarProps) {
                     </div>
                 </div>
             </nav>
-
-            {children}
+            <Suspense>
+                {children}
+            </Suspense>
         </>
     );
 }
