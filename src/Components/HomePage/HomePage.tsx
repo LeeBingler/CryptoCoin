@@ -9,18 +9,28 @@ function HomePage() {
                         Find the Next Crypto Gem on <span> CryptoCoin </span>
                     </h1>
                     <p> Buy and sell BTC, ETH, LTC, DOGE, and other altcoins </p>
-                    <InputBtnField content={'Get Started'} onClick={() => window.alert('You are subscribe to our news letter')} />
+                    <InputBtnField content={'Get Started'} onClick={() => window.alert('You are subscribe to our news letter')} className='btnHomePage' />
                 </div>
 
-                <div>
+                <div className="statsHomePage">
                     <div>
-                        <p>200 +</p>
+                        <p> +700 </p>
+                        <p> Coins </p>
+                    </div>
+
+                    <div>
+                        <p> +1000 </p>
+                        <p> trade per day</p>
+                    </div>
+
+                    <div>
+                        <p> +200 </p>
                         <p> Countries Covered</p>
                     </div>
 
                     <div>
-                        <p> 700+ </p>
-                        <p> Coins </p>
+                        <p> 99.9% </p>
+                        <p> customer satisfaction </p>
                     </div>
                 </div>
             </div>

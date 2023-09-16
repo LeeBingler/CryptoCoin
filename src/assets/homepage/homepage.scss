@@ -26,7 +26,68 @@
     }
 
     p {
+        margin-top: 1rem;
         color: $color-white;
-        font-size: $text-mini;
+        font-size: $text-normal;
+    }
+
+    .btnHomePage {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        position: relative;
+        width: 100%;
+        max-width: 50rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        input {
+            font-size: $text-mini;
+            font-family: $text-font;
+            height: 4rem;
+            width: 100%;
+            padding-right: 13rem;
+            padding-left: 1rem;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            font-family: $text-font;
+            font-size: $text-mini;
+            position: absolute;
+            right: 1.5rem;
+            top: 6px;
+            padding: .7rem;
+            padding-bottom: .1rem;
+            border: none;
+            border-radius: 5px;
+            background: $primary;
+            color: $bg-black;
+
+            &:hover {
+                filter: brightness(85%);
+            }
+        }
+
+        p {
+            white-space: nowrap;
+            margin-top: 1rem;
+            font-size: $text-mini;
+        }
+    }
+}
+
+.statsHomePage {
+    display: grid;
+    width: 100%;
+    background-color: $secondary;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    div p:first-child {
+        color: $primary;
     }
 }
