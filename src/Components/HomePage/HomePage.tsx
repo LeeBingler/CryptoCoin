@@ -1,4 +1,4 @@
-import inputBtnField from "../inputBtnField";
+import InputBtnField from "../InputBtnField";
 
 function HomePage() {
     return (
@@ -9,7 +9,7 @@ function HomePage() {
                         Find the Next Crypto Gem on <span> CryptoCoin </span>
                     </h1>
                     <p> Buy and sell BTC, ETH, LTC, DOGE, and other altcoins </p>
-                    <inputBtnField content={'Get Started'} onClick={() => console.log('click')} />
+                    <InputBtnField content={'Get Started'} onClick={() => window.alert('You are subscribe to our news letter')} />
                 </div>
 
                 <div>
