@@ -20,7 +20,7 @@ function HomePage() {
 
                     <div>
                         <p> +1000 </p>
-                        <p> trade per day</p>
+                        <p> Trade per day</p>
                     </div>
 
                     <div>
@@ -29,8 +29,8 @@ function HomePage() {
                     </div>
 
                     <div>
-                        <p> 99.9% </p>
-                        <p> customer satisfaction </p>
+                        <p> +99% </p>
+                        <p> Customer satisfaction </p>
                     </div>
                 </div>
             </div>

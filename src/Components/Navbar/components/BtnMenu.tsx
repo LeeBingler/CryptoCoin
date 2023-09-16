@@ -17,7 +17,7 @@ function BtnMenu({ colors, boolean, triggerFunc, sizeToDisappearPx }: BtnMenuPro
     }
 
     return (
-        <div onClick={() => triggerFunc((prev) => !prev)} className='btnMenu'>
+        <button onClick={() => triggerFunc((prev) => !prev)} className='btnMenu'>
             <div
                 style={
                     boolean
@@ -39,7 +39,7 @@ function BtnMenu({ colors, boolean, triggerFunc, sizeToDisappearPx }: BtnMenuPro
                         : { transform: 'rotate(0deg)', backgroundColor: closeColor }
                 }
             />
-        </div>
+        </button>
     );
 }
 
