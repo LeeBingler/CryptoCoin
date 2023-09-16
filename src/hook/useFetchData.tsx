@@ -22,7 +22,7 @@ function useFetchData(url:string) {
                   })
                   .catch((e) => {
                       console.error(e.status);
-                      setData(prev => ({...prev, error: e}))
+                      setData(prev => ({...prev, error: e, isLoading: false}))
                   });
           };
           fetchData();
