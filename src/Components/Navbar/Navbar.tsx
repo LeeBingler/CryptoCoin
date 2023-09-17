@@ -10,10 +10,13 @@ interface NavbarProps {
 }
 
 function Navbar({ children }: NavbarProps) {
+    //quand desktop format appuyer lien fait bouger le menu bonne chance Lee du futur
     const [showMenu, setShowMenu] = useState(false);
+    const [mobile, setMobile] = useState(false);
     const mobileSizeMaxPx = 768;
 
     useScreenSizeShow({ setShowMenu: setShowMenu, size: mobileSizeMaxPx });
+    useScreenSizeShow({ setShowMenu: setMobile, size: mobileSizeMaxPx });
 
     return (
         <>
@@ -33,7 +36,7 @@ function Navbar({ children }: NavbarProps) {
                     >
                         <ListLinkOnHome
                             className='listNavbar'
-                            onClick={() => setShowMenu(false)}
+                            onClick={mobile ? (() => null) : (() => setShowMenu((prev) => !prev))}
                         >
                             Home, Market, Choose Us, Join
                         </ListLinkOnHome>
@@ -55,9 +58,7 @@ function Navbar({ children }: NavbarProps) {
                     </div>
                 </div>
             </nav>
-            <Suspense>
-                {children}
-            </Suspense>
+            <Suspense>{children}</Suspense>
         </>
     );
 }
