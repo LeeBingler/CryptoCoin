@@ -1,6 +1,6 @@
 import useFetchData from '../../hook/useFetchData';
 import MarketCard from './components/MarketCard';
-
+import BannerContentMarket from './components/BannerContentMarket';
 interface itemData {
     id: string;
 }
@@ -13,7 +13,8 @@ function Market() {
     const url =
         'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&locale=en';
     /*const {isLoading, data, error:errorMessage} = useFetchData(url);*/
-
+    const smBreakpointPx = 640;
+    const mdBreakpointPx = 768;
     const data = [
         {
             ath: 69045,
@@ -77,24 +78,19 @@ function Market() {
 
     return (
         <section className='marketContainer'>
-            <div className='market'>
+            <article className='market'>
                 <h2> Market Update </h2>
                 <div>
-                    <div className='bannerContentMarket'>
-                        <p> Coin </p>
-                        <p> Price </p>
-                        <p> 24h Change </p>
-                        <p> Market Cap </p>
-                    </div>
+                    <BannerContentMarket smBreakpointPx={smBreakpointPx} mdBreakpointPx={mdBreakpointPx}/>
                     {isLoading ? <p> Loading </p> : null}
                     {error ? <p> Error Try Later: {error}</p> : null}
                     {!isLoading && !error
                         ? data.map((coinStats: itemData) => {
-                              return <MarketCard key={coinStats.id} coinStats={coinStats} />;
+                              return <MarketCard key={coinStats.id} smBreakpointPx={smBreakpointPx} mdBreakpointPx={mdBreakpointPx} coinStats={coinStats} />;
                           })
                         : null}
                 </div>
-            </div>
+            </article>
         </section>
     );
 }
