@@ -26,6 +26,7 @@
     align-items: center;
     background: $gradient;
     border-radius: 5px 5px 0px 0px;
+    font-weight: 600;
 }
 
 .marketCard {
@@ -35,6 +36,10 @@
     height: 10rem;
     border-bottom: 2px $color-white solid;
     padding: 1rem;
+    p {
+        font-weight: 600;
+    }
+
     &:hover {
         background-color: rgba($primary, 0.1);
     }

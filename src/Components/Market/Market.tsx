@@ -63,7 +63,7 @@ function Market() {
             low_24h: 1619.22,
             market_cap: 196836072996,
             market_cap_change_24h: 2121240640,
-            market_cap_change_percentage_24h: 1.08941,
+            market_cap_change_percentage_24h: -1.08941,
             market_cap_rank: 2,
             max_supply: null,
             name: 'Ethereum',
@@ -75,11 +75,11 @@ function Market() {
             total_volume: 5846002652
         }
     ];
-    const isLoading = true;
+    const isLoading = false;
     const error = null;
 
     return (
-        <section className='marketContainer'>
+        <section className='marketContainer' id='Market'>
             <article className='market'>
                 <h2> Market Update </h2>
                 <div>
