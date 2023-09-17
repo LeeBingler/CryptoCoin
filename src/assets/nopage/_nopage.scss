@@ -1,0 +1,56 @@
+@use '../global' as *;
+
+.nopage {
+    height: 80svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: $text-normal;
+        margin-bottom: 4rem;
+    }
+
+    button {
+        padding: 1rem;
+        background: $primary;
+        border: none;
+        border-radius: 10px;
+        color: $color-white;
+        font-size: $text-normal;
+        box-shadow: 0px 0px 22.6px rgba(255, 255, 255, 0.461),
+            0px 0px 62.6px rgba(255, 255, 255, 0.421), 0px 0px 150.7px rgba(255, 255, 255, 0.363),
+            0px 0px 500px rgba(255, 255, 255, 0.3);
+        &:hover {
+            filter: brightness(0.85);
+        }
+    }
+}
+
+.nopageTitle {
+    font-size: 20rem;
+    width: 100%;
+    display: inline;
+    text-align: center;
+
+    img {
+        width: 25%;
+        max-width: 20rem;
+        animation: float 5s infinite;
+    }
+}
+
+/* animation */
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
