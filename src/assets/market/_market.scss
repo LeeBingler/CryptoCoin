@@ -9,6 +9,11 @@
     width: 100svw;
     max-width: 60em;
     margin: 3rem;
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: $h3-size;
+    }
 }
 
 .bannerContentMarket {
@@ -38,4 +43,11 @@
         width: 5rem;
         height: 5rem;
     }
+}
+
+.containerLoadingMarket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80rem;
 }

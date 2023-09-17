@@ -1,6 +1,8 @@
 import useFetchData from '../../hook/useFetchData';
 import MarketCard from './components/MarketCard';
 import BannerContentMarket from './components/BannerContentMarket';
+import Loading from '../Loading';
+
 interface itemData {
     id: string;
 }
@@ -73,7 +75,7 @@ function Market() {
             total_volume: 5846002652
         }
     ];
-    const isLoading = false;
+    const isLoading = true;
     const error = null;
 
     return (
@@ -82,7 +84,7 @@ function Market() {
                 <h2> Market Update </h2>
                 <div>
                     <BannerContentMarket smBreakpointPx={smBreakpointPx} mdBreakpointPx={mdBreakpointPx}/>
-                    {isLoading ? <p> Loading </p> : null}
+                    {isLoading ? <Loading width='15rem' height='15rem' classNameContainer='containerLoadingMarket' />: null}
                     {error ? <p> Error Try Later: {error}</p> : null}
                     {!isLoading && !error
                         ? data.map((coinStats: itemData) => {
