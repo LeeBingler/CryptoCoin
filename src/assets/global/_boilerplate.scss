@@ -1,5 +1,6 @@
 @use './colors' as *;
 @use './typo' as *;
+@use './breakpoint' as *;
 
 * {
     margin: 0;
@@ -27,4 +28,13 @@ a {
 
 li {
     list-style: none;
+}
+
+.titleSection {
+    font-size: $h3-size;
+    font-family: $title-font;
+    margin-bottom: 1rem;
+    @media (min-width: $md) {
+        font-size: $h2-size;
+    }
 }
