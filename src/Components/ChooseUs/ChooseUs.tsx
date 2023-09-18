@@ -3,7 +3,7 @@ import { RiWallet3Line, RiExchangeDollarFill } from 'react-icons/ri';
 import { LiaCoinsSolid } from 'react-icons/lia';
 import { BiLayerPlus } from 'react-icons/bi';
 import { MdOutlineVerified } from 'react-icons/md';
-import { BsCashStack } from 'react-icons/bs';
+import { BsShieldLock } from 'react-icons/bs';
 
 function ChooseUs() {
     return (
@@ -37,9 +37,9 @@ function ChooseUs() {
                         icon={<RiExchangeDollarFill />}
                     />
                     <CardChooseUs
-                        title='Staking on-chain'
-                        content='Generate passive income by securing blockchain'
-                        icon={<BsCashStack />}
+                        title='Maximum Security'
+                        content='Latest generation Anti-Hacker system'
+                        icon={<BsShieldLock />}
                     />
                 </div>
             </article>
