@@ -1,0 +1,75 @@
+@use '../global' as *;
+
+.joinUsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.joinUs {
+    width: 100svw;
+    height: 80svh;
+    max-width: 60em;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    div {
+        margin-bottom: 4rem;
+        h1 {
+            text-align: center;
+            font-size: 7.5rem;
+            margin-bottom: 1rem;
+            span {
+                display: block;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-weight: 800;
+                background: $gradient;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: float 5s infinite;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: $text-normal;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        white-space: nowrap;
+        width: 25rem;
+        border: none;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: $text-normal;
+        background: $gradient;
+        color: $color-white;
+        text-transform: uppercase;
+        box-shadow: 0px 0px 60px rgb(255, 255, 255, 0.5);
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
+}
+
+/* ANIMATION */
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
