@@ -17,7 +17,7 @@ function Market() {
     const mdBreakpointPx = 768;
 
     return (
-        <section className='marketContainer' id='Market'>
+        <section className='container' id='Market'>
             <article className='market'>
                 <h2 className='titleSection'> Market Update </h2>
                 <div>

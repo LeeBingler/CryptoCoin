@@ -38,3 +38,8 @@ li {
         font-size: $h2-size;
     }
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}

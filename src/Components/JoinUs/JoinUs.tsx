@@ -1,6 +1,6 @@
 function JoinUs() {
     return (
-        <section className='joinUsContainer'>
+        <section className='container'>
             <article className='joinUs'>
                 <div>
                     <h1>

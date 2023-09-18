@@ -20,7 +20,7 @@ function Navbar({ children }: NavbarProps) {
 
     return (
         <>
-            <nav className='navContainer'>
+            <nav className='container'>
                 <div className='navbar'>
                     <div className='logo'>
                         <Link to={'/'}>CryptoCoin</Link>
