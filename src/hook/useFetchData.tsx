@@ -30,7 +30,7 @@ function useFetchData(url:string) {
           return () => {
             source.cancel();
           }
-      }, []);
+      }, [url]);
 
       return data;
 }

@@ -36,6 +36,15 @@
     height: 10rem;
     border-bottom: 2px $color-white solid;
     padding: 1rem;
+
+    .green-text {
+        color: $green;
+    }
+
+    .red-text {
+        color: $red;
+    }
+
     p {
         font-weight: 600;
     }
@@ -55,4 +64,32 @@
     justify-content: center;
     align-items: center;
     height: 80rem;
+}
+
+.listMarketBtn {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .active {
+        background: $primary;
+    }
+
+    button {
+        height: 5rem;
+        width: 5rem;
+        font-size: $text-normal;
+        margin-left: 1rem;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        background: $color-white;
+        transition: background-color .4s;
+
+        &:hover {
+            background: $primary;
+        }
+    }
 }
