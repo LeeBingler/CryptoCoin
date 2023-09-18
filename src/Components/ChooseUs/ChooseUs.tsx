@@ -7,7 +7,7 @@ import { BsShieldLock } from 'react-icons/bs';
 
 function ChooseUs() {
     return (
-        <section className='container'>
+        <section className='container' id='ChooseUs'>
             <article className='ChooseUs'>
                 <h2 className='titleSection'> Choose Us </h2>
                 <div className='containerCardChooseUse'>

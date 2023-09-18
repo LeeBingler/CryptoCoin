@@ -31,7 +31,7 @@ function useScreenSizeShow({ setShowMenu, size }:useScreenProps) {
         return () => {
             window.removeEventListener('resize', updateDimension);
         };
-    }, [screenSize, setShowMenu]);
+    }, [screenSize, setShowMenu, size]);
 }
 
 export default useScreenSizeShow;

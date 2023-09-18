@@ -4,7 +4,12 @@
     width: 100svw;
     max-width: 60em;
     margin: 3rem;
+    margin-top: 15rem;
     background: transparent;
+
+    @media (min-width: $md) {
+        margin-top: 19rem;
+    }
 }
 
 .hero {

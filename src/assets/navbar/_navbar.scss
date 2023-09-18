@@ -1,5 +1,13 @@
 @use '../global/' as *;
 
+.navContainer {
+    width: 100svw;
+    background: $bg-black;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.6);
+}
+
 .navbar {
     width: 100svw;
     max-width: 60em;
@@ -7,7 +15,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 3rem;
-    background: $bg-black;
 }
 
 .logo {
@@ -34,7 +41,7 @@
     align-items: center;
     gap: 7rem;
 
-    transition: transform .4s;
+    transition: transform 0.4s;
 
     .listNavbar {
         background-color: inherit;
@@ -47,7 +54,7 @@
         a {
             background-color: inherit;
             color: $color-white;
-            transition: color .4s;
+            transition: color 0.4s;
             font-size: 4rem;
             font-weight: 600;
             &:hover {
@@ -72,7 +79,7 @@
     a {
         color: $color-white;
         font-size: 3rem;
-        transition: color .4s;
+        transition: color 0.4s;
     }
 }
 
@@ -114,7 +121,7 @@
         background: $bg-black;
         transition: none;
         flex-direction: row;
-        width: max-content  ;
+        width: max-content;
         .listNavbar {
             flex-direction: row;
             gap: 5rem;

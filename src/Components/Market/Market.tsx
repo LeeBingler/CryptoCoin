@@ -32,7 +32,7 @@ function Market() {
                             classNameContainer='containerLoadingMarket'
                         />
                     ) : null}
-                    {error ? (
+                    {!isLoading && error ? (
                         <div className='errorMessageMarket'>
                             <p> Error Try Later: {error.message}</p>
                         </div>

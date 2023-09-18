@@ -2,7 +2,7 @@ import InputBtnField from "../InputBtnField";
 
 function HomePage() {
     return (
-        <header className='container'>
+        <header className='container' id="Home">
             <div className="homepage">
                 <div className="hero">
                     <h1>

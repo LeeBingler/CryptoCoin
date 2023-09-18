@@ -1,0 +1,105 @@
+@use '../global' as *;
+
+.errorMessageCoin {
+    height: 80svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $red;
+    gap: 7rem;
+}
+
+.coin {
+    width: 100svw;
+    max-width: 70em;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        padding: 1rem;
+        background: $primary;
+        border: none;
+        border-radius: 10px;
+        color: $color-white;
+        font-size: $text-normal;
+        box-shadow: 0px 0px 22.6px rgba(255, 255, 255, 0.461),
+            0px 0px 62.6px rgba(255, 255, 255, 0.421), 0px 0px 150.7px rgba(255, 255, 255, 0.363),
+            0px 0px 500px rgba(255, 255, 255, 0.3);
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
+
+}
+
+.cardCoin {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+
+    @media (min-width: $lg) {
+        flex-direction: row;
+    }
+}
+
+.headCardCoin {
+    height: 40rem;
+    padding: 5rem;
+    padding-bottom: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid $accent;
+
+    h1 {
+        font-size: $h3-size;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: $h4-size;
+        span {
+            font-weight: 700;
+        }
+    }
+
+    @media (min-width: $lg) {
+        border-bottom: none;
+        border-right: 2px solid $accent;
+    }
+}
+
+.bodyCardCoin {
+    div:not(.descriptionCardCoin) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    p {
+        margin-right: 1.5rem;
+        font-size: $h4-size;
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.descriptionCardCoin {
+    padding: 2rem;
+    margin-top: 2rem;
+    max-height: 35rem;
+    overflow-y: scroll;
+    text-align: left;
+
+    a {
+        color: $green;
+    }
+}

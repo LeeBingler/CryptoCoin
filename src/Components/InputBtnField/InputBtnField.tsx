@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 interface inputBtnFieldProps {
-    onClick: Function;
+    onClick: () => void;
     content: string;
     className: string;
 }
