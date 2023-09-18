@@ -12,25 +12,25 @@ function SocialBar({ twitterLink, discordLink, youtubeLink, facebookLink, classN
     return (
         <div className={className}>
             {twitterLink ? (
-                <a href={twitterLink}>
+                <a href={twitterLink} target='_blank' rel='noreferrer'>
                     <RiTwitterXFill />
                 </a>
             ) : null}
 
             {discordLink ? (
-                <a href={discordLink}>
+                <a href={discordLink} target='_blank' rel='noreferrer'>
                     <RiDiscordFill />
                 </a>
             ) : null}
 
             {youtubeLink ? (
-                <a href={youtubeLink}>
+                <a href={youtubeLink} target='_blank' rel='noreferrer'>
                     <RiYoutubeFill />
                 </a>
             ) : null}
 
             {facebookLink ? (
-                <a href={facebookLink}>
+                <a href={facebookLink} target='_blank' rel='noreferrer'>
                     <RiFacebookFill />
                 </a>
             ) : null}
