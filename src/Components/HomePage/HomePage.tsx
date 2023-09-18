@@ -2,7 +2,7 @@ import InputBtnField from "../InputBtnField";
 
 function HomePage() {
     return (
-        <section className='container'>
+        <header className='container'>
             <div className="homepage">
                 <div className="hero">
                     <h1>
@@ -34,7 +34,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
     );
 }
 
