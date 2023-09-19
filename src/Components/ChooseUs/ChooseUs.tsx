@@ -8,7 +8,7 @@ import { BsShieldLock } from 'react-icons/bs';
 function ChooseUs() {
     return (
         <section className='container' id='ChooseUs'>
-            <article className='ChooseUs'>
+            <main className='ChooseUs'>
                 <h2 className='titleSection'> Choose Us </h2>
                 <div className='containerCardChooseUse'>
                     <CardChooseUs
@@ -42,7 +42,7 @@ function ChooseUs() {
                         icon={<BsShieldLock />}
                     />
                 </div>
-            </article>
+            </main>
         </section>
     );
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <footer className='container'>
-            <article className='footer'>
+            <main className='footer'>
                 <SocialBar
                     className='socialBarFooter'
                     facebookLink='https://facebook.com/'
@@ -16,7 +16,7 @@ function Footer() {
                   <Link to='/privacy'>Privacy</Link>
                   <Link to='/term-of-use'>Term of Use</Link>
                 </div>
-            </article>
+            </main>
         </footer>
     );
 }

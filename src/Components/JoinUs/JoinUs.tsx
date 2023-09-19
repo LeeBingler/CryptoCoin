@@ -1,7 +1,7 @@
 function JoinUs() {
     return (
         <section className='container' id="Join">
-            <article className='joinUs'>
+            <main className='joinUs'>
                 <div>
                     <h1>
                         Join Us Via <br /> <span> Discord </span>
@@ -9,7 +9,7 @@ function JoinUs() {
                     <p> We are the most reliable exchange of Cryptocurrencies </p>
                 </div>
                 <a href='https://discord.com/' target="_blank" rel='noreferrer'> Join the adventure </a>
-            </article>
+            </main>
         </section>
     );
 }

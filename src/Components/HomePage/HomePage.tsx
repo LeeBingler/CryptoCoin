@@ -3,16 +3,16 @@ import InputBtnField from "../InputBtnField";
 function HomePage() {
     return (
         <header className='container' id="Home">
-            <div className="homepage">
-                <div className="hero">
+            <main className="homepage">
+                <section className="hero">
                     <h1>
                         Find the Next Crypto Gem on <span> CryptoCoin </span>
                     </h1>
                     <p> Buy and sell BTC, ETH, LTC, DOGE, and other altcoins </p>
                     <InputBtnField content={'Get Started'} onClick={() => window.alert('You are subscribe to our news letter')} className='btnHomePage' />
-                </div>
+                </section>
 
-                <div className="statsHomePage">
+                <aside className="statsHomePage">
                     <div>
                         <p> +700 </p>
                         <p> Coins </p>
@@ -32,8 +32,8 @@ function HomePage() {
                         <p> +99% </p>
                         <p> Customer satisfaction </p>
                     </div>
-                </div>
-            </div>
+                </aside>
+            </main>
         </header>
     );
 }

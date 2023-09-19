@@ -3,7 +3,7 @@ import React from 'react';
 function Privacy() {
     return (
         <section className='container '>
-            <div className='privacy'>
+            <main className='privacy'>
                 <div>
                     <h1> Privacy Policy for cryptocoin </h1>
                     <p>
@@ -209,7 +209,7 @@ function Privacy() {
                     </p>
                 </div>
                 <p className='disclaimer'>Disclaimer : All of this is actually fake so don't pay to much attention on it</p>
-            </div>
+            </main>
         </section>
     );
 }

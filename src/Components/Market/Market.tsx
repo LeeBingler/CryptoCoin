@@ -18,7 +18,7 @@ function Market() {
 
     return (
         <section className='container' id='Market'>
-            <article className='market'>
+            <main className='market'>
                 <h2 className='titleSection'> Market Update </h2>
                 <div>
                     <BannerContentMarket
@@ -58,7 +58,7 @@ function Market() {
                         />
                     ) : null}
                 </div>
-            </article>
+            </main>
         </section>
     );
 }
