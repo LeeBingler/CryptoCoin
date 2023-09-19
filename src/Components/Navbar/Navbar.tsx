@@ -1,8 +1,7 @@
 import BtnMenu from './components/BtnMenu';
 import ListLinkOnHome from './components/ListLinkOnHome';
 import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
-import { useState, Suspense, useEffect } from 'react';
+import { useState, Suspense } from 'react';
 import useScreenSizeShow from '../../hook/useScreenSizeShow';
 import SocialBar from '../SocialBar';
 import useAnchorReactRouter from '../../hook/useAnchorReactRouter';

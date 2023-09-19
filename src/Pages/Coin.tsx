@@ -8,7 +8,7 @@ function Coin() {
     const navigate = useNavigate();
     const { id } = useParams();
     const url = `https://api.coingecko.com/api/v3/coins/${id}`;
-    const { isLoading, error, data} = useFetchData(url);
+    const { isLoading, error, data } = useFetchData(url);
 
     return (
         <section className='container'>
@@ -28,7 +28,7 @@ function Coin() {
                         </button>
                     </div>
                 ) : null}
-                { !isLoading && !error ? <CardCoin data={data} /> : null}
+                {!isLoading && !error ? <CardCoin data={data} /> : null}
             </article>
         </section>
     );
