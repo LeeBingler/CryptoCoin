@@ -21,7 +21,7 @@ function useFetchData(url:string) {
                       setData({error: null, isLoading: false, data: data});
                   })
                   .catch((e) => {
-                      console.error(e.status);
+                      console.error(e);
                       setData(prev => ({...prev, error: e, isLoading: false}))
                   });
           };

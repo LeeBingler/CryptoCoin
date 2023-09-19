@@ -1,22 +1,24 @@
 import BtnMenu from './components/BtnMenu';
 import ListLinkOnHome from './components/ListLinkOnHome';
 import { Link } from 'react-router-dom';
-import { useState, Suspense } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useState, Suspense, useEffect } from 'react';
 import useScreenSizeShow from '../../hook/useScreenSizeShow';
 import SocialBar from '../SocialBar';
+import useAnchorReactRouter from '../../hook/useAnchorReactRouter';
 
 interface NavbarProps {
     children: JSX.Element;
 }
 
 function Navbar({ children }: NavbarProps) {
-    //quand desktop format appuyer lien fait bouger le menu bonne chance Lee du futur
     const [showMenu, setShowMenu] = useState(false);
     const [mobile, setMobile] = useState(false);
     const mobileSizeMaxPx = 768;
 
     useScreenSizeShow({ setShowMenu: setShowMenu, size: mobileSizeMaxPx });
     useScreenSizeShow({ setShowMenu: setMobile, size: mobileSizeMaxPx });
+    useAnchorReactRouter()
 
     return (
         <>

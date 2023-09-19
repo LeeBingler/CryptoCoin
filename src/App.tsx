@@ -1,5 +1,5 @@
 import './assets/styles.scss';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Home from './Pages/Home';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -11,16 +11,16 @@ const Coin = lazy(() => import('./Pages/Coin'));
 function App() {
 
     return (
-        <>
-          <Navbar>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/coin/:id' element={<Coin />} />
-              <Route path='*' element={<NoPage />} />
-            </Routes>
-          </Navbar>
-          <Footer />
-        </>
+        <Router>
+            <Navbar>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/coin/:id' element={<Coin />} />
+                    <Route path='*' element={<NoPage />} />
+                </Routes>
+            </Navbar>
+            <Footer />
+        </Router>
     );
 }
 

@@ -15,7 +15,7 @@ function ListLinkOnHome({ onClick, children, className = 'list' }: ListLinkOnHom
             {arrayOfChild.map((item, index) => {
                 return (
                     <li onClick={onClick} key={index}>
-                        <Link to={item === 'Home' ? `/` : `/#${item.replace(/\s/g, '')}`}>
+                        <Link to={`/#${item.replace(/\s/g, '')}`}>
                             {item}
                         </Link>
                     </li>
