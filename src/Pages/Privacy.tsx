@@ -208,6 +208,7 @@ function Privacy() {
                         hesitate to contact us.
                     </p>
                 </div>
+                <p className='disclaimer'>Disclaimer : All of this is actually fake so don't pay to much attention on it</p>
             </div>
         </section>
     );

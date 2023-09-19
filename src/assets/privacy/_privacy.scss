@@ -29,6 +29,11 @@
         width: 100%;
     }
 
+    .disclaimer {
+        font-style: italic;
+        font-size: $text-mini;
+    }
+
     @media (min-width: $md) {
         margin-top: 19rem;
     }
