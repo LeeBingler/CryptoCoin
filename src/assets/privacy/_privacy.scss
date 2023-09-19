@@ -1,0 +1,35 @@
+@use '../global' as *;
+
+.privacy {
+    margin-top: 15rem;
+    width: 100svw;
+    max-width: 60em;
+    margin: 3rem;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+
+    h1 {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: $h3-size;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+    }
+
+    .contact {
+        text-align: left;
+        width: 100%;
+    }
+
+    @media (min-width: $md) {
+        margin-top: 19rem;
+    }
+}

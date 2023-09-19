@@ -13,8 +13,8 @@ function Footer() {
                     twitterLink='https://twitter.com/'
                 />
                 <div className='linkFooter'>
-                  <Link to='/Privacy'>Privacy</Link>
-                  <Link to='/Term-Of-Use'>Term of Use</Link>
+                  <Link to='/privacy'>Privacy</Link>
+                  <Link to='/term-of-use'>Term of Use</Link>
                 </div>
             </article>
         </footer>
