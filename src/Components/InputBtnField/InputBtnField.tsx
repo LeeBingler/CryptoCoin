@@ -17,6 +17,7 @@ function InputBtnField({ onClick, content, className }: inputBtnFieldProps) {
         if (
             inputValue.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)
         ) {
+            setStyleError((prev) => ({ ...prev, visibility: 'hidden' }));
             onClick();
         } else {
             setStyleError((prev) => ({ ...prev, visibility: 'visible' }));

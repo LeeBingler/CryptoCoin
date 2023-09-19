@@ -8,7 +8,7 @@ function JoinUs() {
                     </h1>
                     <p> We are the most reliable exchange of Cryptocurrencies </p>
                 </div>
-                <button> Join the adventure </button>
+                <a href='https://discord.com/' target="_blank" rel='noreferrer'> Join the adventure </a>
             </article>
         </section>
     );
