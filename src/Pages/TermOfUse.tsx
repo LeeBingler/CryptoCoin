@@ -1,5 +1,3 @@
-import React from 'react';
-
 function TermOfUse() {
     return (
         <section className='container'>
@@ -140,7 +138,7 @@ function TermOfUse() {
                     <p>Address: 1600 Pennsylvania Avenue NW, Washington, DC 20500, USA</p>
                     <p>Email: cryptocoin@gmail.com</p>
                 </div>
-                
+
             </main>
         </section>
     );
