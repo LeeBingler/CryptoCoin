@@ -108,6 +108,14 @@
     }
 }
 
+.LoadingPage {
+    height: 80rem;
+    width: 100svw;
+    max-width: 60em;
+    margin: 3rem;
+    margin-top: 15rem;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: $md) {

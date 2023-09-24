@@ -5,6 +5,7 @@ import { useState, Suspense } from 'react';
 import useScreenSizeShow from '../../hook/useScreenSizeShow';
 import SocialBar from '../SocialBar';
 import useAnchorReactRouter from '../../hook/useAnchorReactRouter';
+import Loading from '../Loading';
 
 interface NavbarProps {
     children: JSX.Element;
@@ -59,7 +60,9 @@ function Navbar({ children }: NavbarProps) {
                     </div>
                 </div>
             </nav>
-            <Suspense>{children}</Suspense>
+            <Suspense fallback={<Loading width='180' height='180' classNameContainer='LoadingPage'/>}>
+                {children}
+            </Suspense>
         </>
     );
 }
